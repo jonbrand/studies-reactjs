@@ -1,0 +1,1 @@
+export const initialFormData = { name: '', email: '', password: '', country: 'Escolha seu país' };

@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# To-do
+
+[ ] - Passar para styled-components;
+[ ] - Passar constantes e propriedades para o arquivo de constantes, deixando o codigo mais limpo;
+[ ] - Criar formulario com multiplos estados;
+[ ] - Criar componente com useEffect (Assistir video do Diego Rocketseat);
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
