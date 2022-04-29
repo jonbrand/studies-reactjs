@@ -1,8 +1,8 @@
 # To-do
 
 -  [x] Passar para stylecomponents;
--  [] Passar constantes e propriedades para o arquivo de constantes, deixando o codigo mais limpo;
--  [] Criar formulario com multiplos estados;
+-  [x] Passar constantes e propriedades para o arquivo de constantes, deixando o codigo mais limpo;
+-  [x] Criar formulario com multiplos estados;
 -  [] Criar componente com useEffect (Assistir video do Diego Rocketseat);
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

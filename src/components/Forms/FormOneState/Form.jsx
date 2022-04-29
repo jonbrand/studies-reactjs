@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { initialFormData, handleSubmit } from './Form.constant';
 import { Container, Select, Button, Title, Formulary, Input } from './Form.styles';
 
-export const Form = () => {
+export const FormOneState = () => {
   const [inputValues, setInputValues] = useState(initialFormData);
 
   const handleInputChange = (e) => {

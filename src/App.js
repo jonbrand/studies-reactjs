@@ -1,12 +1,18 @@
-import { AppContainer } from './App.styles';
-import { Form } from './components/Forms/FormOneState/Form'
+import { AppContainer, FormContainer } from './App.styles';
+import { FormOneState } from './components/Forms/FormOneState/Form';
+import { FormMultipleStates } from './components/Forms/FormMultipleStates/Form';
 import { GlobalStyles } from './styles/Global.styles';
 export function App() {
   return (
     <>
       <GlobalStyles />
       <AppContainer>
-        <Form />
+        <FormContainer>
+          <FormOneState />
+        </FormContainer>
+        <FormContainer>
+          <FormMultipleStates />
+        </FormContainer>
       </AppContainer>
     </>
   );

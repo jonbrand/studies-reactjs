@@ -6,3 +6,8 @@ export const AppContainer = styled.div `
   max-width: 600px;
   padding: 60px;
 `;
+
+export const FormContainer = styled.div `
+  text-align: center;
+  margin-top: 50px;
+`;
