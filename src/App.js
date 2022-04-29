@@ -1,11 +1,13 @@
-import './App.css';
-import { Form } from './components/Forms/FormOneStates/Form'
-function App() {
+import { AppContainer } from './App.styles';
+import { Form } from './components/Forms/FormOneState/Form'
+import { GlobalStyles } from './styles/Global.styles';
+export function App() {
   return (
     <>
-      <div className="App">
+      <GlobalStyles />
+      <AppContainer>
         <Form />
-      </div>
+      </AppContainer>
     </>
   );
 }

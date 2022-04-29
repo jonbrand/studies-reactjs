@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './Form.styles.css';
 import { initialFormData } from './Form.constant';
+import { Container, Select, Button, Title, Formulary, Input } from './Form.styles'
 
 export const Form = () => {
 
@@ -30,10 +30,10 @@ export const Form = () => {
   }
 
   return (
-    <div className="Container">
-      <form onSubmit={handleSubmit}>
-          <label>Nome</label>
-          <input 
+    <Container>
+      <Formulary onSubmit={handleSubmit}>
+          <Title>Nome</Title>
+          <Input 
             type='text' 
             name='name' 
             placeholder='digite seu nome' 
@@ -41,8 +41,8 @@ export const Form = () => {
             value={inputValues.name}
           />
 
-          <label>E-mail</label>
-          <input 
+          <Title>E-mail</Title>
+          <Input 
             type='email' 
             name='email' 
             placeholder='digite seu e-mail' 
@@ -50,8 +50,8 @@ export const Form = () => {
             value={inputValues.email}
           />
 
-          <label>Senha</label>
-          <input 
+          <Title>Senha</Title>
+          <Input 
             type='password' 
             name='password' 
             placeholder='digite sua senha' 
@@ -59,17 +59,17 @@ export const Form = () => {
             value={inputValues.password}
           />
 
-          <label>Escolha seu país</label>
-          <select name="country" onChange={handleInputChange} value={inputValues.country}>
+          <Title>Escolha seu país</Title>
+          <Select name="country" onChange={handleInputChange} value={inputValues.country}>
             <option value='Nenhum'>Nenhum</option>
             <option value='Irlanda do Norte'>Irlanda do Norte</option>
             <option value='Brasil'>Brasil</option>
             <option value='Austrália'>Austrália</option>
             <option value='Inglaterra'>Inglaterra</option>
-          </select>
+          </Select>
 
-          <button type='submit'>Enviar</button>
-      </form>
-    </div>
+          <Button type='submit'>Enviar</Button>
+      </Formulary>
+    </Container>
   )
 }

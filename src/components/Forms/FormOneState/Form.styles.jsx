@@ -1,4 +1,6 @@
-.Container {
+import styled  from 'styled-components';
+
+export const Container = styled.div`
   position: relative;
   background: #00b159;
   border-radius: 10%;
@@ -6,15 +8,21 @@
   display: flex;
   justify-content: center;
   padding: 50px 50px 50px 50px;
-}
+`;
 
-form{
+export const Formulary = styled.form`
   display: flex;
   align-items: center;
   flex-direction: column;
-}
+`;
 
-input, select, textarea {
+export const Title = styled.label`
+  margin-bottom: 10px;
+  color: #122734;
+  font-weight: bold;
+`;
+
+export const Input = styled.input`
   margin-bottom: 20px;
   position: relative;
   width: 200px;
@@ -32,15 +40,29 @@ input, select, textarea {
   font-size: 16px;
 
   cursor: pointer;
-}
+`;
 
-label{
-  margin-bottom: 10px;
-  color: #122734;
-  font-weight: bold;
-}
+export const Select = styled.select`
+  margin-bottom: 20px;
+  position: relative;
+  width: 200px;
 
-button {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+
+  text-transform: capitalize;
+  color: #595959;
+  background: #c6c6c6;
+
+  text-align: left;
+  padding: 0 15px;
+  font-size: 16px;
+
+  cursor: pointer;
+`;
+
+export const Button = styled.button`
   background: none;
   padding: 12px 30px 10px;
   color: #6c66ae;
@@ -53,9 +75,9 @@ button {
   cursor: pointer;
   display: block;
   max-width: 200px;
-}
 
-button:hover {
-  background-color: #6c66ae;
-  color:white;
-}
+  :hover {
+    background-color: #6c66ae;
+    color:white;
+  }
+`;
